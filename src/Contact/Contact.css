@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+.contact{
+    margin-top: 90px;
+    margin-left: 200px;
+    margin-right: 200px;
+}   
+/* Titre */
+.contact .contact-titre {
+    font-size: clamp(25px, 3.75vw, 50px);
+    color: #ffffff;
+    font-family: "Roboto Serif", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-left: #f0a500 9px solid;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.contact .sous-titre {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    text-indent: 55px;
+}
+
+.contact .contact-form {
+    margin: 30px auto;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.4);
+}
+.contact .contact-form form input,
+.contact .contact-form form textarea {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.2);  
+    color: #ffffff;
+}
+
+.contact .contact-form form input::placeholder,
+.contact .contact-form form textarea::placeholder {
+    color: #ffffff;
+}
+
+.contact .contact-form form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0a500;
+    color: #ffffff;
+    cursor: pointer;
+}
