@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 .footer {
-    margin-top: 90px;
+    margin-top: 60px;
     padding: 20px;
     text-align: center;
     background: linear-gradient(85deg, #11001f, #2a004a);
@@ -14,5 +14,12 @@
 .footer .icon {
     color: #fff;
     margin: 10px;
-    font-size: 24px;
+    font-size: clamp(20px, 4vw, 30px);
+}
+
+/* media */
+@media(max-width: 1024px) and (min-height: 586px){
+    .footer {
+        margin-top: 40px;
+    }
 }

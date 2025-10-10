@@ -27,3 +27,14 @@
     line-height: 1.6;
     text-indent: 55px;
 }
+
+/* media */
+
+@media(max-width: 1024px) and (min-height: 586px){
+    .apropos{
+        margin-top: 60px;
+        margin-left: 30px;
+        margin-right: 20px;
+        padding-bottom: 50px;
+    }
+}

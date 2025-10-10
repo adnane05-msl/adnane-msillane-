@@ -34,3 +34,16 @@
     color: #ffffff;
     border: none;
 }
+
+/* media */
+@media(max-width: 1024px) and (min-height: 586px){
+    .card-projet .card{
+        max-width: 350px;
+        height: 400px;
+    }
+    .card-projet .card img{
+        width: 350px;
+        height: 150px;
+        object-fit: cover
+    }
+}

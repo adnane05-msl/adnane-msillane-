@@ -35,12 +35,12 @@
 /* Navbar Links */
 
 .Navbar .menu {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     font-family: "Roboto Serif", serif;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: clamp(12px, 1.1vw, 18px);
     margin-right: 400px;  
     cursor: pointer; 
 }
@@ -59,25 +59,15 @@
 /* media */
 
 @media(max-width: 1024px) and (min-height: 586px){
-    .Navbar {
-        height: 60px;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    }
-
-    /* Navbar Logo */
-
-    .Navbar .logo {
-        margin-left: 25px ;
+    .Navbar{
+        z-index: 999;
     }
 
     /* Navbar Links */
 
     .Navbar .menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        margin: 20px 0px 0px 0px;
+        
+        margin: 20px 25px 10px 0px;
         transition: all 0.3s ease-in-out;
     }
     .Navbar .menu .nav-link {
@@ -91,5 +81,16 @@
         border: none;
         margin-right: 20px;
     }
+    .navbar-collapse{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 80%;
+        height: 750px;
+        background: linear-gradient(85deg, #11001f, #2a004a);
+        border-left: rgb(255, 255, 255,0.1)  2px solid;
+    }
+    
+    
 }
 

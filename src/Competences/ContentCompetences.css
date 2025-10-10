@@ -11,3 +11,16 @@
     padding: 20px ;
     box-shadow: #f0a500 5px 5px 5px;
 }
+
+/* media */
+@media(max-width: 1024px) and (min-height: 586px){
+    .image-skill img{
+
+        width: 120px;
+        height: 120px;
+        border: 1px solid #f0a500;
+        border-radius: 20px;
+        padding: 10px ;
+        box-shadow: #f0a500 5px 5px 5px;
+    }
+}

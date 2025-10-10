@@ -13,7 +13,7 @@ function Footer() {
                 </a>
                 <a href="https://www.linkedin.com/in/adnane-msillane-8a92b5347/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faLinkedin} className="icon" />
-                </a>
+                </a> 
                 <a href="mailto:msillaneadnane05@gmail.com" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faEnvelope} className="icon" />
                 </a>
