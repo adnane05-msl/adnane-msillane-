@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 .accueil{
-    margin-top: 90px;
+    margin-top: 130px;
     margin-left: 200px;
     margin-right: 200px;
     padding-top: 80px;
@@ -11,16 +11,17 @@
 /* Titre */
 
 .accueil .accueil-titre h3{
-    font-size: clamp(25px, 3.75vw, 50px);
+    font-size: clamp(25px, 4.75vw, 60px);
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 .accueil .accueil-titre h3 span{
     color: #f0a500;
     font-weight: bold;
 }
 .accueil .accueil-titre h1{
-    font-size: clamp(35px, 7.91vw , 100px);
+    font-size: clamp(35px, 8.91vw , 110px);
     background: linear-gradient(45deg, #fa9a14, #cfa62a, #fcdd61);
     -webkit-background-clip: text;
     background-clip: text;
@@ -31,7 +32,7 @@
     font-weight: bold;
 }
 .accueil .accueil-titre h2{
-    font-size: clamp(24px, 4vw, 60px);
+    font-size: clamp(24px, 5vw, 60px);
     color: #ffffff;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
@@ -42,7 +43,7 @@
 .accueil .accueil-description p{
     font-size: 18px;
     color: #ffffff;
-    margin-top: 100px;
+    margin-top: 150px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }
