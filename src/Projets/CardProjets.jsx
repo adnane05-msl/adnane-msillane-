@@ -9,7 +9,7 @@ function CardProjets(props) {
                 <div class="card-body">
                     <h5 class="card-title">{props.title}</h5>
                     <p class="card-text">{props.description}</p>
-                    <a href={props.link} class="button btn">Go somewhere</a>
+                    <a href={props.link} target="_blank" class="button btn">Go somewhere</a>
                 </div>
             </div>
         </div>

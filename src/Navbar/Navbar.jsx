@@ -1,48 +1,69 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
-import Accueil from '../Accueil/Accueil';
 
 function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
 
-    const [open, setOpen] = useState(false);
-    function handleOpen(){
-        setOpen(!open);
-    }
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        closeMenu();
+    };
 
     return (
-        <div >
-            <div className='Navbar navbar navbar-expand-lg fixed-top '>
-                <div className='container-fluid'>
-                    <div className='logo'>
-                        Adnane<span>.</span>
-                    </div>
-
-                    <button
-                        className="navbar-toggler"
-                        id='Navbar-toggler'
-                        type="button"
-                        aria-controls="navbarNavAltMarkup"
-                        aria-expanded={open ? "true" : "false"}
-                        aria-label="Toggle navigation"
-                        onClick={handleOpen}
-                    >
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div className={`collapse navbar-collapse${open ? " show" : ""}`} id="navbarNavAltMarkup">
-                        <div className="menu navbar-nav ms-auto">
-                            <a  className="nav-link">accueil</a>
-                            <a  className="nav-link">à propos</a>
-                            <a  className="nav-link">compétences</a>
-                            <a  className="nav-link">projets</a>
-                            {/* <a  className="nav-link">Contact</a> */}
-                        </div>
-                    </div>
-                    
+        <nav className={`fixed-top navbar ${isOpen ? 'menu-open' : ''}`}>
+            <div className="nav-container">
+                <div className="nav-logo">
+                    Adnane<span>.</span>
                 </div>
-                
+
+                <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
+                    <a 
+                        className="nav-link" 
+                        onClick={() => scrollToSection('accueil')}
+                    >
+                        Accueil
+                    </a>
+                    <a 
+                        className="nav-link" 
+                        onClick={() => scrollToSection('apropos')}
+                    >
+                        À propos
+                    </a>
+                    <a 
+                        className="nav-link" 
+                        onClick={() => scrollToSection('competences')}
+                    >
+                        Compétences
+                    </a>
+                    <a 
+                        className="nav-link" 
+                        onClick={() => scrollToSection('projets')}
+                    >
+                        Projets
+                    </a>
+                </div>
+
+                <div 
+                    className={`nav-toggle ${isOpen ? 'active' : ''}`}
+                    onClick={toggleMenu}
+                >
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </div>
             </div>
-        </div>
+        </nav>
     )
 }
 
