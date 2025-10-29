@@ -44,7 +44,7 @@
 .accueil .accueil-description p{
     font-size: 21px;
     color: #ffffff;
-    margin-top: 60px;
+    margin-top: 50px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }
@@ -61,7 +61,7 @@
         margin-top: 0px;
     }
     .accueil .accueil-description p{
-        margin-top: 80px;
+        margin-top: 0px;
     }
     
 }
