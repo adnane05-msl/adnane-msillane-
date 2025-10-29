@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 .accueil{
-    margin-top: 130px;
+    margin-top: 100px;
     margin-left: 200px;
     margin-right: 200px;
     padding-top: 80px;
@@ -20,6 +20,7 @@
     color: #f0a500;
     font-weight: bold;
 }
+
 .accueil .accueil-titre h1{
     font-size: clamp(35px, 8.91vw , 110px);
     background: linear-gradient(45deg, #fa9a14, #cfa62a, #fcdd61);
@@ -43,7 +44,7 @@
 .accueil .accueil-description p{
     font-size: 21px;
     color: #ffffff;
-    margin-top: 150px;
+    margin-top: 60px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }

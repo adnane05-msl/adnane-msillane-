@@ -5,7 +5,7 @@ function Accueil() {
     return (
         <div className='accueil'>
             <div className='accueil-titre'>
-                <h3>Hello World<span>!</span></h3>
+                <h3>Salut<span>, </span>je suis</h3>
                 <h1>adnane msillane</h1>
                 <h2>developpeur front-end</h2>
             </div>
