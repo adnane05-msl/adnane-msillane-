@@ -94,7 +94,7 @@
         padding: 0 1rem;
     }
     .nav-logo {
-        margin-left: 50px;
+        margin-left: 20px;
     }
     .nav-menu {
         position: fixed;
@@ -149,12 +149,12 @@
     /* Effet sur le contenu principal quand le menu est ouvert */
     .navbar.menu-open ~ * {
         margin-right: 280px;
-        transition: margin-right 0.8s ease;
+        transition: margin-right 0.6s ease;
 
     }
 }
 
 /* Animation douce pour tous les états */
 .navbar * {
-    transition: all 0.8s ease;
+    transition: all 0.6s ease;
 }
