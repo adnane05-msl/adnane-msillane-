@@ -149,12 +149,12 @@
     /* Effet sur le contenu principal quand le menu est ouvert */
     .navbar.menu-open ~ * {
         margin-right: 280px;
-        transition: margin-right 0.6s ease;
+        transition: margin-right 0.4s ease;
 
     }
 }
 
 /* Animation douce pour tous les états */
 .navbar * {
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
 }

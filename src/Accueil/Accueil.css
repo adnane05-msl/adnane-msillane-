@@ -33,7 +33,7 @@
     font-weight: bold;
 }
 .accueil .accueil-titre h2{
-    font-size: clamp(24px, 5vw, 60px);
+    font-size: clamp(24px, 2.5vw, 60px);
     color: #ffffff;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
@@ -42,9 +42,9 @@
 /* Description */
 
 .accueil .accueil-description p{
-    font-size: 21px;
+    font-size: 22px;
     color: #ffffff;
-    margin-top: 50px;
+    margin-top: 0px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }

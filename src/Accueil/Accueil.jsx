@@ -7,10 +7,12 @@ function Accueil() {
             <div className='accueil-titre'>
                 <h3>Salut<span>, </span>je suis</h3>
                 <h1>adnane msillane</h1>
-                <h2>developpeur front-end</h2>
+                <h2>Étudiant en Informatique <br /> Passionné par le Développement et l’Innovation  </h2>
             </div>
             <div className='accueil-description page'>
-                <p>Développeur Front-End passionné par la création d’interfaces modernes et intuitives. Mon objectif est de transformer des concepts en expériences utilisateur fluides et performantes, en combinant design et technologies web innovantes.</p>
+                <p>Étudiant en informatique, je me spécialise dans le développement d’applications web et logicielles.
+                    J’explore différents langages et environnements afin de créer des solutions performantes et bien structurées.
+                </p>
             </div>
         </div>
     )

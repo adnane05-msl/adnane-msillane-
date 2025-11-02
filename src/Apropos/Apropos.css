@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 .apropos{
-    margin-top: 90px;
+    margin-top: 50px;
     margin-left: 200px;
     margin-right: 200px;
 }
@@ -19,13 +19,27 @@
     margin-bottom: 30px;
 }
 
+/* Description */
+.apropos .apropos-description {
+    display: flex;
+    align-items: center;
+}
 
 .apropos .apropos-description p{
-    font-size: 21px;
+    font-size: 23px;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     text-indent: 55px;
+    float: left;
+    padding-right: 30px;
+}
+.apropos .apropos-description .image{
+    /* margin-top: 30px; */
+    width: 220px;
+    border-radius: 10px;
+    float: right;
+    box-shadow: #ffffff 0px 0px 5px 1px;
 }
 
 /* media */
