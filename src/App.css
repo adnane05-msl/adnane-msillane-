@@ -34,3 +34,16 @@ body {
     animation-timeline: view();
     animation-range: entry 0% cover 45%;
   }
+
+  @media(max-width: 1024px) and (min-height: 586px){
+    .page{
+        padding-top: 80px;
+    }
+    .page{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    }
+
+  }
+

@@ -1,45 +1,47 @@
 import React from 'react'
+import './CardCategorie'
+import CardCategorie from './CardCategorie'
 import './Competences.css'
-import html from '../assets/images/html.png'
-import css from '../assets/images/css.png'
-import javaScript from '../assets/images/javaScript.png'
-import react from '../assets/images/react.png'
-import git from '../assets/images/Git.png'
-import github from '../assets/images/GitHub.png'
-import bootdtrap from '../assets/images/Bootstrap.png'
-import vsCode from '../assets/images/vsCode.png'
-import photoshop from '../assets/images/photoshop.png'
-import ContentCompetences from './ContentCompetences'
-
-
 
 function Competences() {
-    const infoSkills = [
-        { id: 1,     img: html,         title: "HTML",         },
-        { id: 2,     img: css,          title: "CSS",          },
-        { id: 3,     img: javaScript,   title: "JavaScript",   },
-        { id: 4,     img: react,        title: "React",        },
-        { id: 5,     img: bootdtrap,    title: "Bootstrap",    },
-        { id: 6,     img: github,       title: "GitHub",       },
-        { id: 7,     img: git,          title: "Git",          },
-        { id: 8,     img: photoshop,    title: "Photoshop",    },
-        { id: 9,     img: vsCode,       title: "VS Code",      },
+    const dataCompetences = [
+        {id : 1  ,   nom : "HTML",                    category: "Technologies Frontend" },
+        {id : 2  ,   nom : "CSS",                     category: "Technologies Frontend" },
+        {id : 3  ,   nom : "React",                   category: "Technologies Frontend" },
+        {id : 4  ,   nom : "bootstrap",               category: "Technologies Frontend" },
+        {id : 5  ,   nom : "JavaScript",              category: "Langages de Programmation" },
+        {id : 6  ,   nom : "Python",                  category: "Langages de Programmation" },
+        {id : 7  ,   nom : "C",                       category: "Langages de Programmation" },
+        {id : 8  ,   nom : "C++",                     category: "Langages de Programmation" },
+        {id : 9  ,   nom : "java",                    category: "Langages de Programmation" },
+        {id : 10 ,   nom : "Git",                     category: "Outils de Développement" },
+        {id : 11 ,   nom : "GitHub",                  category: "Outils de Développement" },
+        {id : 12 ,   nom : "Visual Studio Code",      category: "Outils de Développement" },
+        {id : 13 ,   nom : "MySQL",                   category: "Bases de Données et Langages de Requête" },
     ]
+
+
+    const categoriesUniques = [...new Set(dataCompetences.map(item => item.category))];
 
     return (
         <div className='competences page'>
             <div className='competences-titre'>
-                <h2>Compétences</h2>
+                <h2>Mes Compétences</h2>
             </div>
-            <div className='competences-content'>
-                {infoSkills.map(skill=>
-                    <div key={skill.id}>
-                        <ContentCompetences
-                            img={skill.img}
-                            title={skill.title}
-                        />
-                    </div>
-                )}
+            <div className="cartes-container">
+                {categoriesUniques.map((categorie) => {
+                    const competencesFiltrees = dataCompetences.filter(
+                        (c) => c.category === categorie
+                );
+
+                return (
+                    <CardCategorie
+                    key={categorie}
+                    categorie={categorie}
+                    competences={competencesFiltrees}
+                    />
+                );
+                })}
             </div>
         </div>
     )

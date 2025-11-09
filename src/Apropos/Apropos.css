@@ -35,7 +35,6 @@
     padding-right: 30px;
 }
 .apropos .apropos-description .image{
-    /* margin-top: 30px; */
     width: 220px;
     border-radius: 10px;
     float: right;
@@ -50,5 +49,19 @@
         margin-left: 30px;
         margin-right: 20px;
         padding-bottom: 50px;
+    }
+    .apropos .apropos-description {
+        flex-direction: column-reverse;
+    }
+    .apropos .apropos-description p{
+        text-indent: 0px;
+        padding: 35px 0px 0px 0px;
+
+        margin-bottom: 0px;
+    }
+    .apropos .apropos-description .image{
+        max-width: 300px;
+        height: 280px;
+        object-fit: cover;
     }
 }

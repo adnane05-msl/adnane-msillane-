@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
-.competences{
+.competences .competences-titre{
     margin-top: 90px;
     margin-left: 200px;
     margin-right: 200px;
 }
-/* Titre */
+
 .competences .competences-titre {
     font-size: clamp(25px, 3.75vw, 50px);
     color: #ffffff;
@@ -18,26 +18,19 @@
     margin-bottom: 30px;
 }
 
-.competences .competences-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 90px;
-    justify-items: center;
-    align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
+.competences .cartes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 /* media */
 @media(max-width: 1024px) and (min-height: 586px){
-    .competences{
+    .competences .competences-titre{
         margin-top: 60px;
         margin-left: 30px;
         margin-right: 20px;
     }
-    .competences .competences-content {
-        gap: 25px;
-        margin-left: -15px;
-        margin-right:0px;
-    }
+    
 }
