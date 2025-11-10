@@ -10,18 +10,22 @@ function Navbar() {
         setIsOpen(!isOpen);
     };
 
-    function closeMenu() {
-        setIsOpen(false);
-    };
 
     function scrollToSection(sectionId){
+    setIsOpen(false);
+    
+    setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            const y = element.offsetTop - 210;
+            
+            window.scrollTo({
+                top: y,
+                behavior: 'smooth'
+            });
         }
-        closeMenu();
-    };
-    
+    }, 400); 
+};
     return (
         <nav className={`navbar fixed-top ${isOpen ? 'menu-open' : ''}`}>
             <div className="container-fluid nav-container">

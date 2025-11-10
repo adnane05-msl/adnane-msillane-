@@ -13,9 +13,7 @@ body {
   background: linear-gradient(85deg, #11001f, #2a004a);
   min-height: 100vh;
 }
-.page{
-  padding-top: 140px;
-}
+
 
 @keyframes appear {
   from {
@@ -32,13 +30,18 @@ body {
 .page{
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 45%;
-  }
+    animation-range: entry 0% cover 35%;
+}
+.page{
+    padding-top: 100px;
+}
+
 
   @media(max-width: 1024px) and (min-height: 586px){
-    .page{
-        padding-top: 80px;
+     .page{
+        padding-top: 60px; /* Réduisez à 60px pour mobile */
     }
+        
     .page{
     animation: appear linear;
     animation-timeline: view();

@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 .apropos{
-    margin-top: 10px;
     margin-left: 200px;
     margin-right: 200px;
 }
@@ -45,7 +44,7 @@
 
 @media(max-width: 1024px) and (min-height: 586px){
     .apropos{
-        margin-top: 60px;
+        margin-top: 40px;
         margin-left: 30px;
         margin-right: 20px;
         padding-bottom: 50px;
