@@ -38,7 +38,7 @@ body {
 
 
   @media(max-width: 1024px) and (min-height: 586px){
-     .page{
+    .page{
         padding-top: 60px; /* Réduisez à 60px pour mobile */
     }
         

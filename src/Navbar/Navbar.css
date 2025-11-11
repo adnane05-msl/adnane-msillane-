@@ -131,7 +131,6 @@
         display: flex;
         justify-content: end;
         align-items: end;
-        margin-right: 20px;
     }
 
     .nav-toggle.active .bar:nth-child(1) {
@@ -146,15 +145,12 @@
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    /* Effet sur le contenu principal quand le menu est ouvert */
     .navbar.menu-open ~ * {
-        margin-right: 280px;
-        transition: margin-right 0.4s ease;
-
+        transition: margin-right 0.2s ease;
+        filter: blur(4px);
     }
 }
 
-/* Animation douce pour tous les états */
 .navbar * {
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
 }
