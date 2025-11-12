@@ -6,6 +6,10 @@
     margin-bottom: 20px;
     height: 100%;
 }
+.card-projet .card:hover{
+    box-shadow: #f3cd7c 0px 0px 12px 1px;
+    transition: all 0.3s ease;
+}
 
 .card-projet .card img{
     width: 550px;
@@ -33,6 +37,11 @@
     background-color: #f0a500;
     color: #ffffff;
     border: none;
+}
+.card-projet .card-body .button:hover{
+    background-color: #d18e00;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
 }
 
 /* media */

@@ -71,6 +71,15 @@
     width: 100%;
 }
 
+.nav-menu .nav-link.active {
+    color: #f0a500; 
+}
+
+.nav-menu .nav-link.active::after {
+    width: 100%; 
+    background: #f0a500;
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -94,7 +103,7 @@
         padding: 0 1rem;
     }
     .nav-logo {
-        margin-left: 20px;
+        margin-left: 0px;
     }
     .nav-menu {
         position: fixed;
@@ -146,7 +155,7 @@
     }
 
     .navbar.menu-open ~ * {
-        transition: margin-right 0.2s ease;
+        transition: margin-right 0.3s ease;
         filter: blur(4px);
     }
 }

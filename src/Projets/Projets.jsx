@@ -14,7 +14,7 @@ function Projets() {
             
 
     return (
-        <div className='projets page'>
+        <div id='projets' className='projets page'>
             <div className='projets-titre'>
                 <h2>Mes Projets</h2>
             </div>

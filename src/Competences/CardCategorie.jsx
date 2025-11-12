@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './CardCategorie.css'
 
 function CardCategorie(props) {
-    const { categorie, competences } = props;
+    const { categorie, competences, description } = props;
 
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -16,7 +16,7 @@ function CardCategorie(props) {
             <div className="card-face card-front">
                 <h3 className="titre-categorie">{categorie}</h3>
                 <p className="description-categorie">
-                    Cette catégorie regroupe les technologies et outils liés à <strong>{categorie}</strong>.
+                    {description}
                 </p>
                 <button className="btn-flip" onClick={toggleFlip}>
                     Voir mes compétences

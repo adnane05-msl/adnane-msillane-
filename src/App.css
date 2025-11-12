@@ -33,13 +33,13 @@ body {
     animation-range: entry 0% cover 35%;
 }
 .page{
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 
   @media(max-width: 1024px) and (min-height: 586px){
     .page{
-        padding-top: 60px; /* Réduisez à 60px pour mobile */
+        padding-top: 70px;
     }
         
     .page{

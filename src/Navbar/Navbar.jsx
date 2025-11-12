@@ -1,9 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Navbar.css'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState('accueil');
     
+    useEffect(() => {
+        const sections = document.querySelectorAll('div[id]');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+            });
+        }, {
+            threshold: 0.3, 
+            rootMargin: '-100px 0px -100px 0px'
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        return () => {
+            sections.forEach(section => {
+                observer.unobserve(section);
+            });
+        };
+    }, []);
+
 
 
     function toggleMenu() {
@@ -13,11 +39,12 @@ function Navbar() {
 
     function scrollToSection(sectionId){
     setIsOpen(false);
+    setActiveSection(sectionId);
     
     setTimeout(() => {
         const element = document.getElementById(sectionId);
         if (element) {
-            const y = element.offsetTop - 210;
+            const y = element.offsetTop - 20;
             
             window.scrollTo({
                 top: y,
@@ -36,25 +63,25 @@ function Navbar() {
 
                     <div className={`nav-menu ${isOpen ? 'active' : ''} `}>
                         <a 
-                            className="nav-link" 
+                            className={`nav-link ${activeSection === 'accueil' ? 'active' : ''}`} 
                             onClick={() => scrollToSection('accueil')}
                         >
                             Accueil
                         </a>
                         <a 
-                            className="nav-link" 
+                            className={`nav-link ${activeSection === 'apropos' ? 'active' : ''}`} 
                             onClick={() => scrollToSection('apropos')}
                         >
                             À propos
                         </a>
                         <a 
-                            className="nav-link" 
+                            className={`nav-link ${activeSection === 'competences' ? 'active' : ''}`} 
                             onClick={() => scrollToSection('competences')}
                         >
                             Compétences
                         </a>
                         <a 
-                            className="nav-link" 
+                            className={`nav-link ${activeSection === 'projets' ? 'active' : ''}`} 
                             onClick={() => scrollToSection('projets')}
                         >
                             Projets

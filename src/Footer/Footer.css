@@ -16,6 +16,11 @@
     margin: 10px;
     font-size: clamp(20px, 4vw, 30px);
 }
+.footer .icon:hover {
+    color: #f0a500;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
 
 /* media */
 @media(max-width: 1024px) and (min-height: 586px){

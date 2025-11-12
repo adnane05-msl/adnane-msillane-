@@ -12,6 +12,7 @@
     overflow: hidden;
 }
 
+
 .card-face {
     position: absolute;
     width: 100%;
@@ -26,12 +27,17 @@
     box-sizing: border-box;
 }
 
+
+
 .card-front {
     transform: rotateY(0deg);
 }
 
 .card-back {
     transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    will-change: transform;
+
 }
 
 .card-categorie.flipped .card-front {
@@ -53,24 +59,25 @@
 }
 
 .description-categorie {
-    font-size: 15px;
+    font-size: 16px;
     color: #e3e3e3;
     text-align: center;
-    margin: 50px 0;
-    flex: 1; 
+    margin-top: 50px;
+    font-family: "Roboto Serif", serif;
+    flex-grow: 1; 
 }
 
 .liste-competences {
     list-style: none;
-    padding: 0;
+    padding: 3px;
     margin: 10px 0;
     width: 100%;
     text-align: center;
     color: #ffffff;
     flex: 1;
     overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #a855f7 #480979;
+    /* scrollbar-width: none; */
+    scrollbar-color: #a855f7;
 }
 
 .liste-competences::-webkit-scrollbar {

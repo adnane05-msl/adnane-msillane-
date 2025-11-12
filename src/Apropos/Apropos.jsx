@@ -4,7 +4,7 @@ import './Apropos.css'
 
 function Apropos() {
     return (
-        <div className='apropos page'>
+        <div id='apropos' className='apropos page'>
             <div className='apropos-titre'>
                 <h2>à propos</h2>
             </div>

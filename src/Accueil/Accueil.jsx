@@ -3,7 +3,7 @@ import './Accueil.css'
 
 function Accueil() {
     return (
-        <div className='accueil page'>
+        <div id='accueil' className='accueil page'>
             <div className='accueil-titre'>
                 <h3>Salut<span>, </span>je suis</h3>
                 <h1>adnane msillane</h1>

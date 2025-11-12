@@ -20,11 +20,19 @@ function Competences() {
         {id : 13 ,   nom : "MySQL",                   category: "Bases de Données et Langages de Requête" },
     ]
 
+    const descriptionsCategories = {
+    "Technologies Frontend": "Technologies dédiées à la création d’interfaces web visuelles et interactives.",
+    "Langages de Programmation": "Langages principaux pour le développement de logiciels et d’applications.",
+    "Outils de Développement": "Environnements et plateformes essentiels au développement et à la collaboration.",
+    "Bases de Données et Langages de Requête": "Systèmes permettant le stockage, la gestion et l’organisation des informations."
+};
+
+
 
     const categoriesUniques = [...new Set(dataCompetences.map(item => item.category))];
 
     return (
-        <div className='competences page'>
+        <div id='competences' className='competences page'>
             <div className='competences-titre'>
                 <h2>Mes Compétences</h2>
             </div>
@@ -39,6 +47,7 @@ function Competences() {
                     key={categorie}
                     categorie={categorie}
                     competences={competencesFiltrees}
+                    description={descriptionsCategories[categorie]}
                     />
                 );
                 })}

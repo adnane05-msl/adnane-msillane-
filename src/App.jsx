@@ -13,22 +13,13 @@ function App() {
 
   return (
     <div>
+
       <Navbar />
-      <div id="accueil">
-        <Accueil />
-      </div>
-      <div id="apropos">
-        <Apropos />
-      </div>
-      <div id="competences">
-        <Competences />
-      </div>
-      <div id="projets">
-        <Projets />
-      </div>
-      {/* <div id="contact">
-        <Contact />
-      </div> */}
+      <Accueil />
+      <Apropos />
+      <Competences />
+      <Projets />
+      {/* <Contact />*/}
       <Footer />
       
     </div>

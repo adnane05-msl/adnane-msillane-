@@ -27,8 +27,11 @@
 /* media */
 
 @media(max-width: 1024px) and (min-height: 586px){
-    .projets .projets-titre{
+    .projets{
         margin-top: 40px;
+        padding-bottom: 50px;
+    }
+    .projets .projets-titre{
         margin-left: 30px;
         margin-right: 20px;
     }
