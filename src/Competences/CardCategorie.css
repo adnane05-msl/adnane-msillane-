@@ -10,6 +10,9 @@
     height: 370px; 
     perspective: 1000px;
     overflow: hidden;
+    -webkit-perspective: 1000px;
+    transform-style: preserve-3d;
+
 }
 
 
@@ -25,27 +28,33 @@
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 
 
 
 .card-front {
     transform: rotateY(0deg);
+    z-index: 2;
 }
 
 .card-back {
     transform: rotateY(180deg);
     transform-style: preserve-3d;
     will-change: transform;
+    -webkit-transform: rotateY(180deg);
 
 }
 
 .card-categorie.flipped .card-front {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .card-categorie.flipped .card-back {
     transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
 }
 
 .card-categorie .titre-categorie {
@@ -76,7 +85,7 @@
     color: #ffffff;
     flex: 1;
     overflow-y: auto;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
     scrollbar-color: #a855f7;
 }
 
