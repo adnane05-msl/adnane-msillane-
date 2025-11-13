@@ -56,8 +56,8 @@
 }
 
 .card-categorie.flipped .card-back {
-    transform: rotateY(0deg) translateZ(1px);
-    -webkit-transform: rotateY(0deg) translateZ(1px);
+    transform: rotateY(360deg) translateZ(1px);
+    -webkit-transform: rotateY(360deg) translateZ(1px);
 
 }
 
