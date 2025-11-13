@@ -13,7 +13,8 @@ function CardCategorie(props) {
     return (
         <div className={`card-categorie ${isFlipped ? "flipped" : ""}`}>
             {/* RECTO  */}
-            <div className="card-face card-front">
+            <div className="card-inner">
+                <div className="card-face card-front">
                 <h3 className="titre-categorie">{categorie}</h3>
                 <p className="description-categorie">
                     {description}
@@ -36,6 +37,7 @@ function CardCategorie(props) {
                 <button className="btn-flip" onClick={toggleFlip}>
                     Retour
                 </button>
+            </div>
             </div>
         </div>
     );
